@@ -186,7 +186,19 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 390px) {
+  .box-container {
+    padding: 0 20px;
+    width: 30%;
+  }
+
+  .card {
+    flex-direction: row;
+    Justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 391px) and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
