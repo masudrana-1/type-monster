@@ -189,16 +189,15 @@ button {
 @media only screen and (max-width: 390px) {
   .box-container {
     padding: 0 20px;
-    width: 30%;
+    width: 100%;
   }
 
   .card {
-    flex-direction: row;
-    Justify-content: space-evenly;
+    flex-direction: column;
   }
 }
 
-@media only screen and (min-width: 391px) and (max-width: 700px) {
+/* @media only screen and (min-width: 391px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
@@ -207,4 +206,14 @@ button {
   .card {
     flex-direction: column;
   }
+
+  #histories {
+    display: grid;
+    column-gap: 20;
+    /* grid-template-columns: 200px; */
+/* flex-wrap: wrap; */
+/* justify-content: space-between;
 }
+}
+
+*/

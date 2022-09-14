@@ -126,22 +126,10 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
-
-
-
-
     }
     count--;
 
-
-  },
-
-
-
-    1000);
-
-
-
+  }, 1000);
 };
 
 
@@ -157,7 +145,7 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
 
-  // add parseInt in timeSpent (fixed decimal problem in second ) ---- problem 4 soved 
+  // add parseInt in timeSpent (fixed decimal problem in second ) ---- problem 4 solved 
 
   const timeSpent = parseInt((currentTime - startTime) / 1000);
 
