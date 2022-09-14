@@ -6,32 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
 </head>
 
 <body>
     <header>
-        <h1>Few Simple Question And Answer</h1>
+        <h1 class="header-text">Few Simple Question And Answer</h1>
     </header>
 
-    <main>
-        <div>
-            <h2>What is the difference between localStorage and session storage?</h2>
+    <main class="box-container">
+        <div class="box-1">
+            <h2 class="question-1">What is the difference between localStorage and session storage?</h2>
             <p>The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas
                 sessionStorage data is cleared when the page session ends. A unique page session gets created once a
                 document is loaded in a browser tab. Page sessions are valid for only one tab at a time.</p>
         </div>
-        <div>
-            <h2>What is the difference between global scope and local scope?</h2>
+        <div class="box-2">
+            <h2 class="question-2">What is the difference between global scope and local scope?</h2>
             <p>
                 A global variable has global scope. A global variable is accessible from anywhere in the code. Local
                 Scope — Local scope contains things defined inside code blocks. A local variable has local scope.
             </p>
         </div>
-        <div>
-            <h2>How does the Event Loop works in JavaScript?</h2>
+        <div class="box-3">
+            <h2 class="question-3">How does the Event Loop works in JavaScript?</h2>
             <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack
                 is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack,
                 which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+        </div>
+        <div>
+            <h2></h2>
         </div>
     </main>
 
