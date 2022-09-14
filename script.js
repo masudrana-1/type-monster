@@ -119,7 +119,7 @@ const start = () => {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
 
-      // fixed countdown isseu ------------- problem 2 solve 
+      // fixed countdown issue ------------- problem 2 solve 
 
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
