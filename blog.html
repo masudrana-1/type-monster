@@ -10,36 +10,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 </head>
 
 <body>
-    <header>
-        <h1 class="header-text">Few Simple Question And Answer</h1>
+    <header class="container mx-auto w-8/12 text-center">
+        <h1 class=" text-6xl my-8 text-rose-800 font-bold">Few Simple Question And Answer</h1>
+
+        <hr>
     </header>
 
-    <main class="box-container">
-        <div class="box-1">
-            <h2 class="question-1">What is the difference between localStorage and session storage?</h2>
-            <p>The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas
+    <main class="container mx-auto w-10/12">
+        <div class="bg-orange-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
+            <h2 class="text-5xl mb-7">1. What is the difference between localStorage and session storage?</h2>
+            <p class="font-serif text-3xl"><span class="text-teal-100">Answer:</span> The difference between
+                sessionStorage and localStorage is that
+                localStorage
+                data does
+                not expire, whereas
                 sessionStorage data is cleared when the page session ends. A unique page session gets created once a
                 document is loaded in a browser tab. Page sessions are valid for only one tab at a time.</p>
         </div>
-        <div class="box-2">
-            <h2 class="question-2">What is the difference between global scope and local scope?</h2>
-            <p>
+        <div class="bg-cyan-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
+            <h2 class="text-5xl mb-7">2. What is the difference between global scope and local scope?</h2>
+            <p class="font-serif text-3xl"><span class="text-teal-100">Answer:</span>
                 A global variable has global scope. A global variable is accessible from anywhere in the code. Local
                 Scope — Local scope contains things defined inside code blocks. A local variable has local scope.
             </p>
         </div>
-        <div class="box-3">
-            <h2 class="question-3">How does the Event Loop works in JavaScript?</h2>
-            <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack
+        <div class="bg-pink-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
+            <h2 class="text-5xl mb-7">3. How does the Event Loop works in JavaScript?</h2>
+            <p class="font-serif text-3xl"><span class="text-teal-100">Answer:</span> The Event Loop has one simple job
+                — to monitor the Call Stack and the
+                Callback
+                Queue.
+                If the Call Stack
                 is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack,
                 which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
         </div>
-        <div>
-            <h2></h2>
+        <div class="bg-blue-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
+            <h2 class="text-5xl mb-7">4. How to get undefined in javascript?</h2>
+            <p class="font-serif text-3xl"><span class="text-teal-100">Answer:</span>
+                The global undefined property represents the primitive value undefined. <br>
+                It is one of JavaScript's
+                primitive types.In all non-legacy browsers, undefined is a non-configurable, non-writable property.
+                (Even when this is not the case, avoid overriding it).
+                <br>
+
+                A variable that has not been assigned a value is of type undefined. A method or statement also returns
+                undefined if the variable that is being evaluated does not have an assigned value. A function returns
+                undefined if a value was not returned.
+            </p>
         </div>
     </main>
 

@@ -46,6 +46,10 @@ const typeController = (e) => {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+
+    // add modal error count ------ problem 6 solved 
+
+    errorCount++;
   }
 
   // check if given question text is equal to user typed text
@@ -67,9 +71,15 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
+
+  // add modal parseInt ------- problem 5 solved 
+
   const timeTaken = parseInt((finishTime - startTime) / 1000);
 
   // show result modal
+
+  // let countplus = errorCount++;
+
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
   modalBackground.classList.toggle("hidden");
@@ -88,7 +98,7 @@ const gameOver = () => {
   addHistory(questionText, timeTaken, errorCount);
 
   // restart everything
-  startTime = 0;
+  startTime = 3;
   errorCount = 0;
   userText = "";
   display.classList.add("inactive");
