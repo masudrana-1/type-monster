@@ -98,7 +98,7 @@ const gameOver = () => {
   addHistory(questionText, timeTaken, errorCount);
 
   // restart everything
-  startTime = 3;
+  startTime = 0;
   errorCount = 0;
   userText = "";
   display.classList.add("inactive");

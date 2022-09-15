@@ -200,7 +200,7 @@ button {
 @media only screen and (min-width: 701px) {
   .box-container {
     padding: 0 20px;
-    width: 100%;
+    width: 80%;
   }
 
   .card {
@@ -209,10 +209,8 @@ button {
 
   #histories {
     display: grid;
-    /* flex-wrap: wrap; */
     grid-template-columns: repeat(3, 1fr);
-    margin: 10px;
     row-gap: 20px;
-    column-gap: 20;
+    column-gap: 20px;
   }
 }

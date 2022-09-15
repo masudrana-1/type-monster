@@ -14,15 +14,16 @@
 </head>
 </head>
 
-<body>
+<body class="bg-fuchsia-200">
     <header class="container mx-auto w-8/12 text-center">
-        <h1 class=" text-6xl my-8 text-rose-800 font-bold">Few Simple Question And Answer</h1>
+        <h1 class=" text-6xl hover:text-rose-600 my-8 text-rose-800 font-bold">Few Simple Question And Answer
+        </h1>
 
         <hr>
     </header>
 
     <main class="container mx-auto w-10/12">
-        <div class="bg-orange-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
+        <div class=" bg-orange-500 hover:bg-orange-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
             <h2 class="text-5xl mb-7">1. What is the difference between localStorage and session storage?</h2>
             <p class="font-serif text-3xl"><span class="text-teal-100">Answer:</span> The difference between
                 sessionStorage and localStorage is that
@@ -32,14 +33,14 @@
                 sessionStorage data is cleared when the page session ends. A unique page session gets created once a
                 document is loaded in a browser tab. Page sessions are valid for only one tab at a time.</p>
         </div>
-        <div class="bg-cyan-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
+        <div class="bg-cyan-600 hover:bg-cyan-700 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
             <h2 class="text-5xl mb-7">2. What is the difference between global scope and local scope?</h2>
             <p class="font-serif text-3xl"><span class="text-teal-100">Answer:</span>
                 A global variable has global scope. A global variable is accessible from anywhere in the code. Local
                 Scope — Local scope contains things defined inside code blocks. A local variable has local scope.
             </p>
         </div>
-        <div class="bg-pink-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
+        <div class="bg-pink-600 hover:bg-pink-700 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
             <h2 class="text-5xl mb-7">3. How does the Event Loop works in JavaScript?</h2>
             <p class="font-serif text-3xl"><span class="text-teal-100">Answer:</span> The Event Loop has one simple job
                 — to monitor the Call Stack and the
@@ -49,18 +50,22 @@
                 is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack,
                 which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
         </div>
-        <div class="bg-blue-600 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
+        <div class="bg-blue-600 hover:bg-blue-700 my-8 p-6 rounded-3xl shadow-2xl shadow-slate-700">
             <h2 class="text-5xl mb-7">4. How to get undefined in javascript?</h2>
             <p class="font-serif text-3xl"><span class="text-teal-100">Answer:</span>
                 The global undefined property represents the primitive value undefined. <br>
                 It is one of JavaScript's
-                primitive types.In all non-legacy browsers, undefined is a non-configurable, non-writable property.
-                (Even when this is not the case, avoid overriding it).
-                <br>
-
-                A variable that has not been assigned a value is of type undefined. A method or statement also returns
-                undefined if the variable that is being evaluated does not have an assigned value. A function returns
-                undefined if a value was not returned.
+                primitive types. <br>
+            <p class="text-2xl text-yellow-200 my-3">8 way to get undefined </p>
+            <p class="text-2xl text-teal-200 mb-2">1. Variable that is not initialized will give undefined </p>
+            <p class="text-2xl text-teal-200 mb-2">2. Function with no return</p>
+            <p class="text-2xl text-teal-200 mb-2">3. Parameter that is not passed will be undefined</p>
+            <p class="text-2xl text-teal-200 mb-2">4. If return has nothing on the right side will return undefined </p>
+            <p class="text-2xl text-teal-200 mb-2">5. Property that doesn't exist on an object will give you undefined
+            </p>
+            <p class="text-2xl text-teal-200 mb-2">6. Accessing array elements outside of the index range</p>
+            <p class="text-2xl text-teal-200 mb-2">7. Deleting an element inside an array</p>
+            <p class="text-2xl text-teal-200">8. Set a value directly to undefined</p>
             </p>
         </div>
     </main>
