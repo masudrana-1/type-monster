@@ -47,7 +47,7 @@ const typeController = (e) => {
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
 
-    // add modal error count ------ problem 6 solved 
+    //  add modal error count ------ problem 6 solved
 
     errorCount++;
   }
